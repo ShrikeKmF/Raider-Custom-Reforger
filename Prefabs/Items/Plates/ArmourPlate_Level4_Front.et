@@ -1,0 +1,28 @@
+GenericEntity : "{64941E010D670A86}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/DestructibleArmorPlate_PCGenIII_ESAPIrevJ_Base.et" {
+ ID "5E8AAD43E9190F4B"
+ components {
+  InventoryItemComponent "{5E8ECC640173D51A}" {
+   Attributes SCR_ItemAttributeCollection "{5E8ECC64FE0C8C3D}" {
+    ItemDisplayName UIInfo "{5E8ECC64FFFC5902}" {
+     Name "#RHS-Plates_ESAPI_Name #RHS-DIR_FRONT"
+    }
+    CustomAttributes {
+     RHS_CustomAttributes "{5E8ECC652DAE2BB5}" {
+      m_sCompatibleSlotNames {
+       "ArmorPlate_Front"
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{5E8AAD426FFDF856}" {
+   Object "{92948F255F84A465}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_front.xob"
+  }
+  BaseLoadoutClothComponent "{5E8AB8C5B004EA04}" {
+   AreaType RHS_LoadoutSAPIFrontPlateSlotArea "{693865554B13FEB5}" {
+   }
+   WornModel "{92948F255F84A465}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_front.xob"
+   ItemModel "{F6BE0C5D6041DFA2}Assets/Items/Equipment/Plates/RHS_SAPI.xob"
+  }
+ }
+}

@@ -1,0 +1,247 @@
+Vehicle : "{F5763805919D0553}Prefabs/Vehicles/Helicopters/AH6M/AH6M_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "[RTG] Sparrow Cargo (2/2)"
+    m_Image "{B9BAF76D005BAB9A}UI/Textures/EditorPreviews/Vehicles/Helicopters/AH6M/MH6M_Supply.edds"
+    m_sFaction "RTG"
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_SMALL TRAIT_SUPPLYSTORAGE_SMALL
+    }
+    m_aAutoLabels {
+     FACTION_RTG SIZE_M
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EF07CE9B4A73374}" {
+      m_BudgetType RANK_LIEUTENANT
+      m_Value 4
+     }
+    }
+   }
+  }
+  SCR_ResourceComponent "{69388CEA957C5D86}" {
+   m_aContainers {
+    SCR_ResourceContainer "{69388CEA957C5DB8}" {
+     m_eResourceRights FACTION
+     m_eStorageType CARGO_VEHICLE
+     m_fResourceValueCurrent 0
+     m_fResourceValueMax 0
+     m_fResourceGain 0
+     m_fResourceGainTickrate 0
+     m_fResourceGainTimeout 0
+     m_fResourceDecay 0
+     m_fResourceDecayTickrate 0
+     m_fResourceDecayTimeout 0
+    }
+   }
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{69388CEA957C5DB5}" {
+     m_sDebugName "Encapsulator - AH6M"
+     m_eResourceRights ALL
+     m_ContainerQueue SCR_ResourceEncapsulatorContainerQueue "{69388CEA957C5DB0}" {
+      m_StoragePolicies {
+       SCR_ResourceEncapsulatorStoragePolicyGeneric "{69388CEA957C5DB1}" {
+        m_StorageQueue SCR_ResourceEncapsulatorContainerStorageQueue "{69388CEA957C5DAF}" {
+        }
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceEncapsulatorActionChangeDecay "{69388CEA957C5DAC}" {
+       m_fResourceDecay 0
+       m_fResourceDecayTickrate 0
+       m_fResourceDecayTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeGain "{69388CEA957C5DAA}" {
+       m_fResourceGain 0
+       m_fResourceGainTickrate 0
+       m_fResourceGainTimeout 0
+      }
+      SCR_ResourceEncapsulatorActionChangeOnEmptyBehavior "{69388CEA957C5DA8}" {
+       m_eOnEmptyBehavior HIDE
+      }
+      SCR_ResourceEncapsulatorActionChangeResourceValue "{69388CEA957C5DA9}" {
+       m_fResourceValueCurrent 0
+      }
+     }
+    }
+   }
+   m_aConsumers {
+    SCR_ResourceConsumer "{69388CEA957C5DA4}" {
+     m_sDebugName "Consumer - Load Supplies"
+     m_eResourceRights ALL
+     m_eGeneratorIdentifier VEHICLE_LOAD
+     m_fResourceRange 25
+     m_fBuyMultiplier 0
+     m_fSellMultiplier 0
+     m_bIsIgnoringItself 1
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{69388CEA957C5DA2}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicy "{69388CEA957C5DA0}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{69388CEA957C5DD3}" {
+        }
+       }
+       SCR_ResourceConsumerStoragePolicy "{69388CEA957C5DD0}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{69388CEA957C5DD1}" {
+        }
+        m_eStorageType STORED
+       }
+      }
+     }
+    }
+    SCR_ResourceConsumer "{69388CEA957C5DCF}" {
+     m_sDebugName "Consumer - Unload Supplies"
+     m_eResourceRights SELF
+     m_eGeneratorIdentifier VEHICLE_UNLOAD
+     m_fResourceRange 25
+     m_fBuyMultiplier 0
+     m_fSellMultiplier 0
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{69388CEA957C5DCC}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicyGeneric "{69388CEA957C5DCA}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{69388CEA957C5DCB}" {
+        }
+       }
+      }
+     }
+    }
+   }
+   m_aGenerators {
+    SCR_ResourceGenerator "{69388CEA957C5DC9}" {
+     m_sDebugName "Generator - Load"
+     m_eResourceRights SELF
+     m_eIdentifier VEHICLE_LOAD
+     m_fResourceMultiplier 1
+     m_fStorageRange 25
+     m_ContainerQueue SCR_ResourceGeneratorContainerQueue "{69388CEA957C5DC7}" {
+      m_StoragePolicies {
+       SCR_ResourceGeneratorStoragePolicyGeneric "{69388CEA957C5DC4}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueue "{69388CEA957C5DC5}" {
+        }
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceGeneratorActionStore "{69388CEA957C5DF8}" {
+      }
+     }
+    }
+    SCR_ResourceGenerator "{69388CEA957C5DF9}" {
+     m_sDebugName "Generator - Unload Supplies"
+     m_eResourceRights ALL
+     m_eIdentifier VEHICLE_UNLOAD
+     m_fResourceMultiplier 1
+     m_fStorageRange 25
+     m_bIsIgnoringItself 1
+     m_ContainerQueue SCR_ResourceGeneratorContainerQueue "{69388CEA957C5DF7}" {
+      m_StoragePolicies {
+       SCR_ResourceGeneratorStoragePolicy "{69388CEA957C5DF4}" {
+        m_StorageQueue SCR_ResourceGeneratorContainerStorageQueueExtended "{69388CEA957C5DF5}" {
+        }
+        m_eStorageType STORED
+       }
+      }
+     }
+     m_aActions {
+      SCR_ResourceGeneratorActionStore "{69388CEA957C5DF2}" {
+      }
+     }
+    }
+   }
+   m_bEnableDebugVisualization 1
+   m_eDebugVisualizationFlags 15
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "RTG"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Supply_Ext {
+     MergePhysics 1
+     Prefab "{07D502D3EB0FC94D}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Extra/MH6M_Supply_Exterior.et"
+     DisablePhysicsInteraction 1
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_01 {
+     Offset 0 1.2558 -0.2529
+     Angles -90 180 0
+     MergePhysics 1
+     Prefab "{18155FE1DB5D5775}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_01.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_02 {
+     Offset -1.5176 0.301 -0.3847
+     Angles 0 90 0
+     MergePhysics 1
+     Prefab "{74416B016799D85B}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_02.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_03 {
+     Offset 1.5176 0.301 -0.3847
+     Angles 0 -90 0
+     MergePhysics 1
+     Prefab "{74416B016799D85B}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_02.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_04 {
+     Offset 0 0.7848 -0.0718
+     Angles 0 180 0
+     MergePhysics 1
+     Prefab "{91DD27F86B7C4F30}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_03.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_05 {
+     Offset 0 1.1826 -0.2539
+     Angles 90 180 0
+     MergePhysics 1
+     Prefab "{91DD27F86B7C4F30}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_03.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_06 {
+     Offset 0 1.5083 -0.8504
+     Angles 90 180 0
+     MergePhysics 1
+     Prefab "{91DD27F86B7C4F30}Prefabs/Props/Military/SupplyBox/SupplyStack/SupplyStack_01/SupplyStack_03.et"
+     RegisterDamage 1
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{69388CEA957C5C10}" {
+     ContextName "supply_l"
+     Position PointInfo "{69388CEA957C5C11}" {
+      PivotID "Scene_Root"
+      Offset -1.7925 0.3985 -0.4053
+      Angles 0 -90 0
+     }
+     Radius 0.7
+     Height 2
+    }
+    UserActionContext "{69388CEA957C5C0F}" {
+     ContextName "supply_r"
+     Position PointInfo "{69388CEA957C5C0C}" {
+      PivotID "Scene_Root"
+      Offset 1.7925 0.3985 -0.4053
+      Angles 0 90 0
+     }
+     Radius 0.7
+     Height 2
+    }
+   }
+   additionalActions {
+    SCR_ResourceContainerVehicleLoadAction "{647A7CCD547B39F7}" : "{A0E53319BFA4E848}Configs/Resources/Supplies/Actions/Supplies_Vehicle_Load.conf" {
+     ParentContextList {
+      "supply_l" "supply_r"
+     }
+    }
+    SCR_ResourceContainerVehicleUnloadAction "{647A7CCD2B7D99F0}" : "{F10C4B3E2E87F15B}Configs/Resources/Supplies/Actions/Supplies_Vehicle_Unload.conf" {
+     ParentContextList {
+      "supply_l" "supply_r"
+     }
+    }
+   }
+  }
+ }
+}

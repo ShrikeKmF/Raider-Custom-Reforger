@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0948C3BB3F05D123}Assets/Props/Fabric/Flags/Data/Flag_2_3_RTG.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

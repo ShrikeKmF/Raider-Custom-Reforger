@@ -1,0 +1,35 @@
+Vehicle : "{F5763805919D0553}Prefabs/Vehicles/Helicopters/AH6M/AH6M_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  MH6M_AmmoDisplayComponent "{65F48EDC93FEE39F}" {
+   m_LayoutPath "{C24D6DA2CD33EDC7}UI/layouts/MFD/MH6M_AmmoMFD.layout"
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "[RTG] Sparrow Transport (2/8)"
+    m_Image "{3E82256CD1A7793D}UI/Textures/EditorPreviews/Vehicles/Helicopters/AH6M/MH6M.edds"
+    m_sFaction "RTG"
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_SMALL
+    }
+    m_aAutoLabels {
+     FACTION_RTG SIZE_M
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "RTG"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Seats_Cargo {
+     MergePhysics 1
+     Prefab "{CA6F30B162EAE5CE}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Extra/MH6M_seats.et"
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterCompartments 1
+    }
+   }
+  }
+ }
+}

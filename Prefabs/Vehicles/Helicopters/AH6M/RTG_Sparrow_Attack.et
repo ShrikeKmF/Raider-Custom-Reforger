@@ -1,0 +1,91 @@
+Vehicle : "{6CA46BC65DE861A8}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Armed_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  SCR_HelicopterSoundComponent "{5A7CE769E7A9C43E}" {
+   Filenames + {
+    "{B12946540CB7BED0}Sounds/Weapons/Launchers/IR_Module/Weapons_Launchers_IR_Module.acp"
+   }
+  }
+  AH6M_AIM92X1_AmmoDisplayComponent "{69388CEA9E620E11}" {
+   id "AIM92X1"
+   m_LayoutPath "{BF0D15191470481B}UI/layouts/MFD/AH6M_AIM92X1_AmmoMFD.layout"
+  }
+  AH6M_M260X2_AmmoDisplayComponent "{65F33DCC2373AD99}" {
+   Enabled 0
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "[RTG] Sparrow Attack (2/2)"
+    m_Image "{AD6B012DB2488C52}UI/Textures/EditorPreviews/Vehicles/Helicopters/AH6M/AH6M_AIM92x1.edds"
+    m_sFaction "RTG"
+    m_aAutoLabels {
+     FACTION_RTG SIZE_M
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "RTG"
+  }
+  WCS_Armament_LoadoutComponent "{629E45AA8C346AFE}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{629E45AA84C02956}" {
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{6154C601E3F07C0F}" {
+       isEnabled 0
+      }
+      WCS_ArmamentWeaponInfo "{6154C601E3368D28}" {
+       Position PointInfo "{6154C601FD423397}" {
+       }
+      }
+     }
+    }
+    WCS_ArmamentWeaponGroup "{69388CEA9E620E35}" {
+     prefab "{09A182D7D80853B2}Prefabs/Weapons/AircraftWeapons/MissilePods/AIM92/Pod_AIM92_AH6M.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{69388CEA9E620E33}" {
+       Position PointInfo "{69388CEA9E620E31}" {
+        Offset -1.5036 0.7092 -0.262
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{69388CEA9E620E2F}" {
+       m_iFireIntervalMS 2500
+      }
+     }
+     slotIndex 2
+    }
+   }
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{685B0E6AEC29B6AA}" {
+   components {
+    WCS_Armament_InfraredMissileWeaponStationModuleComponent "{69388CEA9E620E28}" {
+     m_fLockFov 5
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Hydra_Cable_L {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo Hydra_Cable_R {
+    }
+   }
+  }
+  WeaponSlotComponent "{69388CEA9E620E5E}" {
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   WeaponTemplate "{52120E4BA120661B}Prefabs/Weapons/Core/Armament_Empty.et"
+   WeaponSlotIndex 2
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   additionalActions {
+    WCS_Armament_VehicleDisplayPowerAction "{6674C319EDF13ED5}" {
+     m_sDisplayId "AIM92X1"
+    }
+   }
+  }
+ }
+}

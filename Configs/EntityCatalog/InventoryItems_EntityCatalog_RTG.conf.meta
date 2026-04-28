@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A1898026DB117463}Configs/EntityCatalog/US/InventoryItems_EntityCatalog_RTG.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

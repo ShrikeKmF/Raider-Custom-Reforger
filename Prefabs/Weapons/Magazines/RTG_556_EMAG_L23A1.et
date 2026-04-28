@@ -1,0 +1,50 @@
+GenericEntity : "{11B9CC1FB4AEE740}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "[RTG] 5.56mm EMAG (AP)"
+     Description "L23A1 AP"
+    }
+    CustomAttributes {
+     SCR_ItemOfInterestAttribute "{5556C918268A1683}" {
+     }
+     PreviewRenderAttributes "{52D2D34338621F08}" {
+      LodModel 0
+     }
+    }
+   }
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellStanag556 "{05B3A6C89B25311A}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "[RTG] EMAG 5.56x45mm L15A1 AP"
+    Description "L15A1 AP"
+    m_sAmmoType "AP"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags AP
+   }
+   AmmoConfig "{279CD21AFC135F4E}Configs/Weapons/Ammo/Ammo_556x45_EMAG_AP.conf"
+   AmmoMapping {
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{2EBBC351C85F7107}Assets/Weapons/Magazines/EMAG Magpul.xob"
+  }
+  MagazineAnimationComponent "{69388CF77811A50B}" {
+   AnimGraph "{25DBDA37A532214A}Assets/Weapons/Magazines/workspaces/M60_magazine.agr"
+   AnimInstance "{C8B18FECB93B73A4}Assets/Weapons/Magazines/workspaces/M60_Magazine.asi"
+   AlwaysActive 1
+   AnimatedMesh "{766BE6F0F18B9841}Assets/Weapons/Magazines/EMAG.xob"
+   BulletMeshesToHide {
+    "w_bullet_30" "w_bullet_29" "w_bullet_28" "w_bullet_27" "w_bullet_26" "w_bullet_25" "w_bullet_24" "w_bullet_23" "w_bullet_22" "w_bullet_21" "w_bullet_20" "w_bullet_19" "w_bullet_18" "w_bullet_17" "w_bullet_16" "w_bullet_15" "w_bullet_14" "w_bullet_13" "w_bullet_12" "w_bullet_11" "w_bullet_10" "w_bullet_09" "w_bullet_08" "w_bullet_07" "w_bullet_06" "w_bullet_05" "w_bullet_04" "w_bullet_03" "w_bullet_02" "w_bullet_01"
+   }
+   EmptyStateMeshesToHide {
+    "w_bullet_01"
+   }
+  }
+ }
+}

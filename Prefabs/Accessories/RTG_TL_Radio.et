@@ -1,0 +1,26 @@
+GenericEntity : "{9ED0B1EA19FDB134}Prefabs/Accessories/RTG_Section_Radio.et" {
+ ID "6938654A3DF1D140"
+ components {
+  BaseRadioComponent "{6938654A3DF1D153}" {
+   Transceivers {
+    RadioTransceiver "{6938654A3DF1D15C}" {
+     "Transmitting Range" 2000
+    }
+    RadioTransceiver "{69388CE59E167BD8}" {
+     ChannelFrequency 35000
+     "Transmitting Range" 2000
+     "Min tunable frequency" 32000
+     "Max tunable frequency" 68000
+    }
+   }
+  }
+  InventoryItemComponent "{6938654A3DF1D15B}" {
+   Attributes SCR_ItemAttributeCollection "{6938654A3DF1D15A}" {
+    ItemDisplayName UIInfo "{6938654A3DF1D124}" {
+     Name "[RTG] TW/790 (TL)"
+     Description "RTG Standard Team Leader radio"
+    }
+   }
+  }
+ }
+}

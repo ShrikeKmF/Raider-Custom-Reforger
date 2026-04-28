@@ -1,0 +1,191 @@
+GenericEntity {
+ ID "6938654EDC4BCAEF"
+ components {
+  MeshObject "{6938654EDC4BCADB}" {
+   Object "{3BBDBC37E8C27129}Assets/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249_Item.xob"
+  }
+  SCR_SoundDataComponent "{6938654EDC4BCAD5}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6938654EDC4BCAD6}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6938654EDC4BCACB}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6938654EDC4BCACD}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+    SCR_AudioSourceConfiguration "{6938654EDC4BCACC}" {
+     m_sSoundProject "{F01623940EA93645}Sounds/Items/_SharedData/Open/Backpack_ALICE/Items_Backpack_ALICE.acp"
+     m_sSoundEventName "SOUND_CONTAINER_OPEN"
+    }
+    SCR_AudioSourceConfiguration "{6938654EDC4BCACE}" {
+     m_sSoundProject "{F01623940EA93645}Sounds/Items/_SharedData/Open/Backpack_ALICE/Items_Backpack_ALICE.acp"
+     m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{6938654EDC4BCAC0}" {
+   Attributes SCR_ItemAttributeCollection "{6938654EDC4BCAC2}" {
+    ItemDisplayName UIInfo "{6938654EDC4BCAC4}" {
+     Name "AFAK"
+     Description "RTG Advanced First Aid Kit"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6938654EDC4BCAB9}" {
+     Weight 9
+     SizeSetupStrategy Manual
+     ItemDimensions 10 10 10
+     ItemVolume 3200
+     DimensionScaler 1
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6938654EDC4BCABD}" {
+      CameraOrbitAngles -25 -30 0
+      CameraDistanceToItem 1
+      FOV 10
+      AspectRatio 1
+      PreviewModel "{D924907BDBD9A146}Assets/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249.xob"
+     }
+     SCR_ItemOfInterestAttribute "{6938654EDC4BCABE}" {
+      m_InterestType BANDAGE
+     }
+     SCR_ItemOfInterestAttribute "{6938654EDC4BCAAD}" {
+      m_InterestType MORPHINE
+     }
+     SCR_ItemOfInterestAttribute "{6938654EDC4BCAAC}" {
+      m_InterestType TOURNIQUET
+     }
+    }
+    m_Size SLOT_2x2
+    m_SlotType SLOT_ANY
+    m_bStackable 0
+   }
+   MaxCumulativeVolume 3000
+   MaxItemSize 5 5 5
+   InitialStorageSlots {
+    EquipmentStorageSlot Saline0 {
+     Prefab "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et"
+    }
+    EquipmentStorageSlot Saline1 {
+     Prefab "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et"
+    }
+    EquipmentStorageSlot Saline2 {
+     Prefab "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et"
+    }
+    EquipmentStorageSlot Saline3 {
+     Prefab "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et"
+    }
+    EquipmentStorageSlot Morphine0 {
+     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    }
+    EquipmentStorageSlot Morphine1 {
+     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    }
+    EquipmentStorageSlot Morphine2 {
+     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    }
+    EquipmentStorageSlot Morphine4 {
+     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    }
+    EquipmentStorageSlot Bandage0 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage1 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage2 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage3 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage4 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage6 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage7 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage8 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Bandage9 {
+     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    }
+    EquipmentStorageSlot Epinephrine0 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+    EquipmentStorageSlot Epinephrine1 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+    EquipmentStorageSlot Epinephrine2 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+    EquipmentStorageSlot Epinephrine3 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+    EquipmentStorageSlot Epinephrine4 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+    EquipmentStorageSlot Epinephrine5 {
+     Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+    }
+   }
+   m_fMaxWeight 8
+   m_aSlotsToShow {
+   }
+  }
+  ActionsManagerComponent "{6938654EDC4BCAA7}" {
+   ActionContexts {
+    UserActionContext "{6938654EDC4BCA99}" {
+     ContextName "default"
+     Position PointInfo "{6938654EDC4BCA9B}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6938654EDC4BCA9F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6938654EDC4BCA9E}" {
+      Name "#AR-Inventory_PickUp"
+     }
+    }
+    SCR_OpenStorageAction "{6938654EDC4BCA91}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6938654EDC4BCA90}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+     "Sort Priority" 1
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{6938654EDC4BCA95}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{61E294244C3DAAFF}" : "{7D39CAE0A72D6C51}Prefabs/Weapons/Core/Configs/TriggerEffects/ADS/TriggerEffect_ADSGadget.conf" {
+    }
+    GamepadTriggerEffect "{61E29424EE08E95B}" : "{F518B28F67EC05AD}Prefabs/Weapons/Core/Configs/TriggerEffects/Charged/TriggerEffect_ChargedGadget.conf" {
+    }
+   }
+  }
+  RplComponent "{6938654EDC4BCA89}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6938654EDC4BCA86}" {
+  }
+ }
+ coords 0.286 -0.036 0.11
+}

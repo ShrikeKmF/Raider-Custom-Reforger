@@ -1,0 +1,21 @@
+TracerProjectile : "{9F01DD8C46AD2618}Prefabs/Weapons/Ammo/SmallArms/Ammo_556x45_Tracer_M196.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   InitSpeed 1030
+   InitSpeedVariation 9.1
+   DispersionMultiplier 1.03
+   Mass 0.0034
+   BallisticTableConfig "{F7D5F3D6D26BE5CD}Configs/Weapons/AIBallisiticTables/SmallArms/AIBT_556x45_AP_M995.conf"
+   AirDrag 0.0000035
+   Length 23
+   MushroomingDamageMultiplier 0
+   TumblingDamageMultiplier 0.1
+   TumblingDecelerationCurve {
+    0 0 1 1
+   }
+   PenetrationDepth 12
+   PenetrationSpeed 926
+  }
+ }
+}

@@ -1,0 +1,21 @@
+GameEntity : "{B9142789D2FB4308}Prefabs/Characters/Armbands/Single/Armband_Single_Base.et" {
+ ID "61E43A54A15F05C3"
+ components {
+  InventoryItemComponent "{61E43A54A15F05DC}" {
+   Attributes SCR_ItemAttributeCollection "{61E43A54A15F05D0}" {
+    ItemDisplayName UIInfo "{61E43A54A15F05EC}" {
+     Name "[RTG] Armband (Base)"
+     Description "RTG Standard Armband"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{61E43A54A15F050E}" {
+   WornMaterialsOverride {
+    "{70526ADA293F6C65}Assets/Characters/Armbands/01/Data/Colors/armband_purple.emat"
+   }
+   ItemMaterialsOverride {
+    "{70526ADA293F6C65}Assets/Characters/Armbands/01/Data/Colors/armband_purple.emat"
+   }
+  }
+ }
+}
