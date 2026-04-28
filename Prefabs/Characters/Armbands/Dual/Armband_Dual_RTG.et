@@ -1,0 +1,20 @@
+GameEntity : "{758B4A669A90F334}Prefabs/Characters/Armbands/Dual/Armband_Dual_Base.et" {
+ ID "61E43A54A15F05C3"
+ components {
+  InventoryItemComponent "{61E43A54A15F05DC}" {
+   Attributes SCR_ItemAttributeCollection "{61E43A54A15F05D0}" {
+    ItemDisplayName UIInfo "{61E43A54A15F05EC}" {
+     Name "#WCS-Armband_Dual_Name - #WCS-Armband_Red"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{61E43A54A15F050E}" {
+   WornMaterialsOverride {
+    "{70526ADA293F6C65}Assets/Characters/Armbands/01/Data/Colors/armband_purple.emat"
+   }
+   ItemMaterialsOverride {
+    "{70526ADA293F6C65}Assets/Characters/Armbands/01/Data/Colors/armband_purple.emat"
+   }
+  }
+ }
+}
