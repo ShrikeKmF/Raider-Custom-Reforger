@@ -1,0 +1,49 @@
+Vehicle : "{E1C3AC2D66E31E4B}Prefabs/Vehicles/Wheeled/M1152/M1152.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "CMV (1/1)"
+    m_Image "{3B50F76E7D831B82}UI/EditorPreviews/Vehicles/Wheeled/M1152/M1152_Covered.edds"
+    m_sFaction "RTG"
+    m_aAutoLabels {
+     FACTION_RTG SIZE_M VEHICLE_CAR
+    }
+   }
+  }
+  SCR_FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     m_fInitialFuelTankState 100
+    }
+    SCR_FuelNode "{6938D5A588E7A321}" {
+     MaxFuel 250
+     FuelCapPosition EntitySlotInfo "{566ADD141C309F7D}" {
+      Offset 0.0637 0.9501 -2.5544
+      Angles 0 0 0
+     }
+     m_fInitialFuelTankState 100
+     m_eFuelNodeType 11
+    }
+   }
+  }
+  SCR_RepairSupportStationComponent "{6938D5A5C67C4D20}" {
+   m_bIsVehicle 1
+   m_fRange 15
+   m_eFactionUsageCheck 3
+  }
+  SCR_SupportStationManagerComponent "{6938D5A5C29A9D38}" {
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "RTG"
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Cargo_Rack {
+     Prefab "{4C2C87BA0556B32F}Prefabs/Vehicles/Wheeled/M1097/VehParts/M1097_bench_cargo_Canvas.et"
+    }
+   }
+  }
+ }
+ coords 0 0 -2.249
+}

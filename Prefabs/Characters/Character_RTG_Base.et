@@ -1,0 +1,66 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames + {
+    "{04548C6D4A936054}Sounds/RadioProtocol/RadioProtocol_Report_2_US.acp"
+   }
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Offset 0 0.1674 0.1659
+       Enabled 0
+      }
+     }
+    }
+   }
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   "Heavy damage threshold" 1800
+   m_fDOTScale 0.6
+  }
+  SCR_CharacterFactionAffiliationComponent "{6938D5A528632123}" {
+   "faction affiliation" "RTG"
+  }
+  SCR_CharacterStaminaComponent "{520EA1D2F659C824}" {
+   EncumbranceMassMin 120
+   EncumbranceMassMax 165
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Character Base"
+    Icon "{EE0B4CDEA86FC24A}UI/Textures/DeployMenu/LoadoutIcons/LoadoutIcons.imageset"
+    IconSetName "EditableEntity_Character_Custom"
+    m_sFaction "RTG"
+    m_aAuthoredLabels + {
+     ENTITYTYPE_CHARACTER FACTION_RTG
+    }
+    m_aAutoLabels {
+    }
+   }
+  }
+  SCR_ExtendedCharacterIdentityComponent "{5AEEA3C8B2AA118B}" {
+   m_iMaxRandomAge 43
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponSlotIndex 0
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponSlotIndex 1
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{04F4D8CBA36A534B}Prefabs/Characters/Heads/Head_Black_02.et"
+     Body "{6253161EEAB88EAB}Prefabs/Characters/Basebody/CharacterBasebody_Black_02.et"
+    }
+    SoundIdentity SoundIdentity "{56E6D945D8F79290}" {
+     VoiceID 0
+    }
+   }
+  }
+ }
+}
