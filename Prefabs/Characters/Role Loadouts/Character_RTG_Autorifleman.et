@@ -1,3 +1,8 @@
 SCR_ChimeraCharacter : "{FD6DCAB788079619}Prefabs/Characters/Character_RTG_Base_Loadout.et" {
  ID "520EC961A090B1EE"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{D17695658497EA22}Prefabs/Weapons/MachineGuns/M249/MG_FN_Minimi_M249E3_Para.et"
+  }
+ }
 }

@@ -4,10 +4,11 @@ GenericEntity : "{64941E010D670A86}Prefabs/Characters/Vests/Vest_PCGen_III/Plate
   InventoryItemComponent "{5E8ECC640173D51A}" {
    Attributes SCR_ItemAttributeCollection "{5E8ECC64FE0C8C3D}" {
     ItemDisplayName UIInfo "{5E8ECC64FFFC5902}" {
-     Name "#RHS-Plates_ESAPI_Name #RHS-DIR_RIGHT"
+     Name "Level III Armour Plate (Right)"
+     Description "Level III"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5E8ECC64FC3AF3E7}" {
-     Weight 1
+     Weight 0.5
     }
     CustomAttributes {
      RHS_CustomAttributes "{5E8ECC652DAE2BB5}" {
@@ -21,8 +22,17 @@ GenericEntity : "{64941E010D670A86}Prefabs/Characters/Vests/Vest_PCGen_III/Plate
   MeshObject "{5E8AAD426FFDF856}" {
    Object "{BAD71DA1CAC4154E}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_right.xob"
   }
+  SCR_ArmorDamageManagerComponent "{5E8AAD42631A3C7B}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Plate {
+     MaxHealth 26
+     DamageReduction 2.25
+     DamageThreshold 1.5
+    }
+   }
+  }
   BaseLoadoutClothComponent "{5E8AB8C5B004EA04}" {
-   AreaType RHS_LoadoutSAPIRightPlateSlotArea "{6938655563CB9C9D}" {
+   AreaType GRS_Right_Plate "{693A99555C5D03C8}" {
    }
    WornModel "{BAD71DA1CAC4154E}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_right.xob"
    ItemModel "{C34F8FBEFC581AA4}Assets/Items/Equipment/Plates/side.xob"

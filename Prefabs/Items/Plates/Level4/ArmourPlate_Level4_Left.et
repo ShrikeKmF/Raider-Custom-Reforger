@@ -1,0 +1,32 @@
+GenericEntity : "{64941E010D670A86}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/DestructibleArmorPlate_PCGenIII_ESAPIrevJ_Base.et" {
+ ID "5E8AAD43E9190F4B"
+ components {
+  InventoryItemComponent "{5E8ECC640173D51A}" {
+   Attributes SCR_ItemAttributeCollection "{5E8ECC64FE0C8C3D}" {
+    ItemDisplayName UIInfo "{5E8ECC64FFFC5902}" {
+     Name "Level IV Armour Plate (Left)"
+     Description "Level IV"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5E8ECC64FC3AF3E7}" {
+     Weight 1
+    }
+    CustomAttributes {
+     RHS_CustomAttributes "{5E8ECC652DAE2BB5}" {
+      m_sCompatibleSlotNames {
+       "ArmorPlate_Left"
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{5E8AAD426FFDF856}" {
+   Object "{B2B2F330E828D5DE}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_left.xob"
+  }
+  BaseLoadoutClothComponent "{5E8AB8C5B004EA04}" {
+   AreaType GRS_Left_Plate "{693A995574CF6A78}" {
+   }
+   WornModel "{B2B2F330E828D5DE}Assets/Characters/Vests/Vest_PCGen_III/Plates/Plate_PC_Gen_III_left.xob"
+   ItemModel "{C34F8FBEFC581AA4}Assets/Items/Equipment/Plates/side.xob"
+  }
+ }
+}

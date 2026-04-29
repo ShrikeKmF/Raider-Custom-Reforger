@@ -1,3 +1,39 @@
 SCR_ChimeraCharacter : "{3CE8F7B8A2B7F1B4}Prefabs/Characters/Character_RTG_Base.et" {
  ID "520EC961A090B1EE"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{61C6D750034924EA}Prefabs/5AB890B71D748750/Weapon_Variants_B/Rifle_M4_Variant_SBR_URGI.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{4C60F1FB3CD4DC2D}Prefabs/Weapons/Handguns/Glock/GL_Handgun_Glock24.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{6C367C4C7F14B961}Prefabs/Characters/Helmet/Crye/BaseHelmet/Crye_Black.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{657FD8108D3B6A13}Prefabs/Characters/Uniforms/Tops/Gryphon_Jackets/GRS_Gryphon_Jacket_Gray.et"
+    }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{37E3DF28FCEDE0F2}Prefabs/Vests/AVS_Custom/GRS_AVS_RG.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{AB50BBCB1AAA0F31}Prefabs/Characters/Uniforms/CCUE_JEANS_TACPANTS/Champs_Jeans.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{E0611B087A844B9F}Prefabs/Characters/Footwear/Adidas.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{6E5D956E2314B508}Prefabs/Items/Equipment/Backpacks/Delta/Delta_Backpack_Black.et"
+    }
+    LoadoutSlotInfo GRS_Waist {
+     Prefab "{CF6A0718561CDE9D}Prefabs/Belts/Bison Belts/GRS_Bison_Belt_Black.et"
+    }
+    LoadoutSlotInfo Armband {
+     Prefab "{E700F80F639B8BAE}Prefabs/Characters/Armbands/Dual/Armband_Dual_RTG.et"
+    }
+   }
+  }
+ }
 }

@@ -1,0 +1,21 @@
+GenericEntity : "{AD2709F5F6F0D871}Prefabs/Weapons/Grenades/M18/Smoke_M18_Base.et" {
+ ID "1F80A73AAE197BBE"
+ components {
+  InventoryItemComponent "{51FAA3E3CF6F087A}" {
+   Attributes SCR_ItemAttributeCollection "{51FAA3E3C2D19BD4}" {
+    ItemDisplayName WeaponUIInfo "{6924D1F6C818B26A}" {
+     Name "M18 Blue (LZ)"
+     Description "Landing Zone Smoke"
+    }
+   }
+  }
+  MeshObject "{51EC93F29BA5F234}" {
+   Materials {
+    MaterialAssignClass "{6924D1F6C818B234}" {
+     SourceMaterial "m18"
+     AssignedMaterial "{A7488D83404644CB}Assets/Weapons/Grenades/M18/Data/m18_violet.emat"
+    }
+   }
+  }
+ }
+}

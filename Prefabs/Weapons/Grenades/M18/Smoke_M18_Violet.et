@@ -1,0 +1,12 @@
+GenericEntity : "{AD2709F5F6F0D871}Prefabs/Weapons/Grenades/M18/Smoke_M18_Base.et" {
+ ID "51F6738D832430AE"
+ components {
+  InventoryItemComponent "{51FAA3E3CF6F087A}" {
+   Attributes SCR_ItemAttributeCollection "{51FAA3E3C2D19BD4}" {
+    ItemDisplayName WeaponUIInfo "{56CA90F83F20C023}" {
+     Name "M18 Purple (Overrun)"
+    }
+   }
+  }
+ }
+}
