@@ -62,5 +62,53 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base
     }
    }
   }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Vest {
+     Enabled 0
+    }
+    LoadoutSlotInfo GRS_Left_Drop_Leg {
+     Enabled 0
+    }
+    LoadoutSlotInfo GRS_Right_Drop_Leg {
+     Enabled 0
+    }
+    LoadoutSlotInfo Head {
+     Enabled 0
+    }
+    LoadoutSlotInfo Ears {
+     Enabled 0
+    }
+    LoadoutSlotInfo Neck {
+    }
+    LoadoutSlotInfo Extra {
+     Enabled 0
+    }
+    LoadoutSlotInfo Extra2 {
+     Enabled 0
+    }
+    LoadoutSlotInfo Extra5 {
+     Enabled 0
+    }
+    LoadoutSlotInfo Extra6 {
+     Enabled 0
+    }
+    LoadoutSlotInfo Waist {
+     Enabled 0
+    }
+    LoadoutSlotInfo EyeWear {
+     Enabled 0
+    }
+    LoadoutSlotInfo EarWear {
+     Enabled 0
+    }
+    LoadoutSlotInfo FaceWear {
+     Enabled 0
+    }
+    LoadoutSlotInfo WristWear {
+     Enabled 0
+    }
+   }
+  }
  }
 }
