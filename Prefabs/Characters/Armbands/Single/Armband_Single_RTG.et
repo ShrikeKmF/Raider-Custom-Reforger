@@ -4,7 +4,7 @@ GameEntity : "{B9142789D2FB4308}Prefabs/Characters/Armbands/Single/Armband_Singl
   InventoryItemComponent "{61E43A54A15F05DC}" {
    Attributes SCR_ItemAttributeCollection "{61E43A54A15F05D0}" {
     ItemDisplayName UIInfo "{61E43A54A15F05EC}" {
-     Name "[RTG] Armband (Base)"
+     Name "[RTG] Armband (Single)"
      Description "RTG Standard Armband"
     }
    }

@@ -138,6 +138,12 @@ GenericEntity {
     EquipmentStorageSlot Epinephrine5 {
      Prefab "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
     }
+    EquipmentStorageSlot YellowSmoke0 {
+     Prefab "{9BBDEE253A16CC66}Prefabs/Weapons/Grenades/M18/Smoke_M18_Yellow.et"
+    }
+    EquipmentStorageSlot YellowSmoke1 {
+     Prefab "{9BBDEE253A16CC66}Prefabs/Weapons/Grenades/M18/Smoke_M18_Yellow.et"
+    }
    }
    m_fMaxWeight 8
    m_aSlotsToShow {

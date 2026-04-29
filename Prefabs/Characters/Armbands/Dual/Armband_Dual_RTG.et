@@ -4,7 +4,7 @@ GameEntity : "{758B4A669A90F334}Prefabs/Characters/Armbands/Dual/Armband_Dual_Ba
   InventoryItemComponent "{61E43A54A15F05DC}" {
    Attributes SCR_ItemAttributeCollection "{61E43A54A15F05D0}" {
     ItemDisplayName UIInfo "{61E43A54A15F05EC}" {
-     Name "#WCS-Armband_Dual_Name - #WCS-Armband_Red"
+     Name "[RTG] Armband (Duel)"
     }
    }
   }

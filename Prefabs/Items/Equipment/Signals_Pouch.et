@@ -1,42 +1,42 @@
 GenericEntity {
- ID "6938654EE5D142F6"
+ ID "693A995F637BDA41"
  components {
-  MeshObject "{6938654EE5D142E4}" {
+  MeshObject "{693A995F637BDA71}" {
    Object "{3BBDBC37E8C27129}Assets/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249_Item.xob"
   }
-  SCR_SoundDataComponent "{6938654EE5D142D1}" {
+  SCR_SoundDataComponent "{693A995F637BDA65}" {
    m_aAudioSourceConfiguration {
-    SCR_AudioSourceConfiguration "{6938654EE5D142D7}" {
+    SCR_AudioSourceConfiguration "{693A995F637BDA61}" {
      m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
      m_sSoundEventName "SOUND_PICK_UP"
     }
-    SCR_AudioSourceConfiguration "{6938654EE5D142D6}" {
+    SCR_AudioSourceConfiguration "{693A995F637BDA9F}" {
      m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
      m_sSoundEventName "SOUND_EQUIP"
      m_eFlags 0
     }
-    SCR_AudioSourceConfiguration "{6938654EE5D142C9}" {
+    SCR_AudioSourceConfiguration "{693A995F637BDA9D}" {
      m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
      m_sSoundEventName "SOUND_DROP"
     }
-    SCR_AudioSourceConfiguration "{6938654EE5D142C8}" {
+    SCR_AudioSourceConfiguration "{693A995F637BDA9B}" {
      m_sSoundProject "{F01623940EA93645}Sounds/Items/_SharedData/Open/Backpack_ALICE/Items_Backpack_ALICE.acp"
      m_sSoundEventName "SOUND_CONTAINER_OPEN"
     }
-    SCR_AudioSourceConfiguration "{6938654EE5D142CB}" {
+    SCR_AudioSourceConfiguration "{693A995F637BDA98}" {
      m_sSoundProject "{F01623940EA93645}Sounds/Items/_SharedData/Open/Backpack_ALICE/Items_Backpack_ALICE.acp"
      m_sSoundEventName "SOUND_CONTAINER_CLOSE"
     }
    }
   }
-  SCR_UniversalInventoryStorageComponent "{6938654EE5D142CA}" {
-   Attributes SCR_ItemAttributeCollection "{6938654EE5D142CF}" {
-    ItemDisplayName UIInfo "{6938654EE5D142C1}" {
-     Name "IFAK"
-     Description "RTG Individual First Air Kit"
+  SCR_UniversalInventoryStorageComponent "{693A995F637BDA96}" {
+   Attributes SCR_ItemAttributeCollection "{693A995F637BDA95}" {
+    ItemDisplayName UIInfo "{693A995F637BDA93}" {
+     Name "Signals Pouch"
+     Description "RTG Smoke Grenade Pouch"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{6938654EE5D142C2}" {
-     Weight 0.14
+    ItemPhysAttributes ItemPhysicalAttributes "{693A995F637BDA91}" {
+     Weight 1.5
      SizeSetupStrategy Manual
      ItemDimensions 10 10 10
      ItemVolume 250
@@ -45,20 +45,20 @@ GenericEntity {
      RestingAdditiveOffsetLS 0 0 0
     }
     CustomAttributes {
-     PreviewRenderAttributes "{6938654EE5D142C4}" {
+     PreviewRenderAttributes "{693A995F637BDA8D}" {
       CameraOrbitAngles -25 -30 0
       CameraDistanceToItem 1
       FOV 10
       AspectRatio 1
       PreviewModel "{D924907BDBD9A146}Assets/Items/Equipment/Accessories/Pouch_ALICE_200rnd_M249/Pouch_ALICE_200rnd_M249.xob"
      }
-     SCR_ItemOfInterestAttribute "{6938654EE5D142B8}" {
+     SCR_ItemOfInterestAttribute "{693A995F637BDA88}" {
       m_InterestType BANDAGE
      }
-     SCR_ItemOfInterestAttribute "{6938654EE5D14262}" {
+     SCR_ItemOfInterestAttribute "{693A995F637BDABC}" {
       m_InterestType MORPHINE
      }
-     SCR_ItemOfInterestAttribute "{6938654EE5D14265}" {
+     SCR_ItemOfInterestAttribute "{693A995F637BDABD}" {
       m_InterestType TOURNIQUET
      }
     }
@@ -70,59 +70,68 @@ GenericEntity {
    MaxCumulativeVolume 800
    MaxItemSize 5 5 5
    InitialStorageSlots {
-    EquipmentStorageSlot Bandage0 {
-     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    EquipmentStorageSlot Purple0 {
+     Prefab "{14C1A0F061D9DDEE}Prefabs/Weapons/Grenades/M18/Smoke_M18_Violet.et"
     }
-    EquipmentStorageSlot Bandage1 {
-     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    EquipmentStorageSlot Blue0 {
+     Prefab "{C9D77D5EB5E5C628}Prefabs/Weapons/Grenades/M18/Smoke_M18_Blue.et"
     }
-    EquipmentStorageSlot Bandage2 {
-     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    EquipmentStorageSlot Blue1 {
+     Prefab "{C9D77D5EB5E5C628}Prefabs/Weapons/Grenades/M18/Smoke_M18_Blue.et"
     }
-    EquipmentStorageSlot Bandage3 {
-     Prefab "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+    EquipmentStorageSlot Blue2 {
+     Prefab "{C9D77D5EB5E5C628}Prefabs/Weapons/Grenades/M18/Smoke_M18_Blue.et"
     }
-    EquipmentStorageSlot Morphine0 {
-     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    EquipmentStorageSlot Green0 {
+     Prefab "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et"
     }
-    EquipmentStorageSlot Morphine1 {
-     Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+    EquipmentStorageSlot Green1 {
+     Prefab "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et"
+    }
+    EquipmentStorageSlot Green2 {
+     Prefab "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et"
+    }
+    EquipmentStorageSlot Red0 {
+     Prefab "{3343A055A83CB30D}Prefabs/Weapons/Grenades/M18/Smoke_M18_Red.et"
+    }
+    EquipmentStorageSlot Red1 {
+     Prefab "{3343A055A83CB30D}Prefabs/Weapons/Grenades/M18/Smoke_M18_Red.et"
     }
    }
    m_fMaxWeight 0.32
    m_aSlotsToShow {
    }
   }
-  ActionsManagerComponent "{6938654EE5D1425D}" {
+  ActionsManagerComponent "{693A995F637BDAB0}" {
    ActionContexts {
-    UserActionContext "{6938654EE5D1425E}" {
+    UserActionContext "{693A995F637BDAB1}" {
      ContextName "default"
-     Position PointInfo "{6938654EE5D14250}" {
+     Position PointInfo "{693A995F637BDAAC}" {
      }
      Radius 0.2
     }
    }
    additionalActions {
-    SCR_PickUpItemAction "{6938654EE5D14255}" {
+    SCR_PickUpItemAction "{693A995F637BDAAB}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{6938654EE5D14254}" {
+     UIInfo UIInfo "{693A995F637BDAA8}" {
       Name "#AR-Inventory_PickUp"
      }
     }
-    SCR_OpenStorageAction "{6938654EE5D14256}" {
+    SCR_OpenStorageAction "{693A995F637BDAA6}" {
      ParentContextList {
       "default"
      }
-     UIInfo UIInfo "{6938654EE5D14249}" {
+     UIInfo UIInfo "{693A995F637BDAA4}" {
       Name "#AR-Inventory_OpenStorage"
      }
      "Sort Priority" 1
     }
    }
   }
-  GadgetGamepadEffectsManagerComponent "{6938654EE5D1424B}" {
+  GadgetGamepadEffectsManagerComponent "{693A995F637BDAA0}" {
    OwnedEffects {
     GamepadTriggerEffect "{61E294244C3DAAFF}" : "{7D39CAE0A72D6C51}Prefabs/Weapons/Core/Configs/TriggerEffects/ADS/TriggerEffect_ADSGadget.conf" {
     }
@@ -130,11 +139,11 @@ GenericEntity {
     }
    }
   }
-  RplComponent "{6938654EE5D1424F}" {
+  RplComponent "{693A995F637BDADE}" {
    "Rpl State Override" Runtime
    "Parent Node From Parent Entity" 0
   }
-  Hierarchy "{6938654EE5D1423A}" {
+  Hierarchy "{693A995F637BDACC}" {
   }
  }
  coords 0.286 -0.036 0.11
