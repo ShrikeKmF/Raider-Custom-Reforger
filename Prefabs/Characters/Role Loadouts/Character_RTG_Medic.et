@@ -1,3 +1,14 @@
 SCR_ChimeraCharacter : "{FD6DCAB788079619}Prefabs/Characters/Character_RTG_Base_Loadout.et" {
  ID "520EC961A090B1EE"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Medic"
+    m_Image "{D1EA10E1349CF70C}UI/Textures/EditorPreviews/Characters/Factions/INDFOR/ION/Character_RHS_ION_Medic.edds"
+    m_aAuthoredLabels + {
+     ROLE_MEDIC TRAIT_ARMOR TRAIT_MEDICAL
+    }
+   }
+  }
+ }
 }

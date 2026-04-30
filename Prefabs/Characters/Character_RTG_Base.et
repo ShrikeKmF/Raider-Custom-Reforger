@@ -31,9 +31,10 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base
   }
   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
-    Name "Character Base"
+    Name "Character"
     Icon "{EE0B4CDEA86FC24A}UI/Textures/DeployMenu/LoadoutIcons/LoadoutIcons.imageset"
     IconSetName "EditableEntity_Character_Custom"
+    m_Image "{CA2D71E8A8F8898A}UI/Textures/EditorPreviews/Characters/Factions/INDFOR/ION/Character_RHS_ION_Rifleman.edds"
     m_sFaction "RTG"
     m_aAuthoredLabels + {
      ENTITYTYPE_CHARACTER FACTION_RTG
@@ -64,49 +65,17 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
-    LoadoutSlotInfo Vest {
-     Enabled 0
-    }
-    LoadoutSlotInfo GRS_Left_Drop_Leg {
-     Enabled 0
-    }
-    LoadoutSlotInfo GRS_Right_Drop_Leg {
-     Enabled 0
-    }
-    LoadoutSlotInfo Head {
-     Enabled 0
-    }
-    LoadoutSlotInfo Ears {
-     Enabled 0
-    }
     LoadoutSlotInfo Neck {
     }
-    LoadoutSlotInfo Extra {
-     Enabled 0
-    }
     LoadoutSlotInfo Extra2 {
-     Enabled 0
+     AreaType ZEL_ExtraArea2 "{64F94B2CDD25A632}" {
+     }
     }
     LoadoutSlotInfo Extra5 {
-     Enabled 0
-    }
-    LoadoutSlotInfo Extra6 {
-     Enabled 0
+     AreaType ZEL_ExtraArea5 "{64F94B2B1608DCD8}" {
+     }
     }
     LoadoutSlotInfo Waist {
-     Enabled 0
-    }
-    LoadoutSlotInfo EyeWear {
-     Enabled 0
-    }
-    LoadoutSlotInfo EarWear {
-     Enabled 0
-    }
-    LoadoutSlotInfo FaceWear {
-     Enabled 0
-    }
-    LoadoutSlotInfo WristWear {
-     Enabled 0
     }
    }
   }

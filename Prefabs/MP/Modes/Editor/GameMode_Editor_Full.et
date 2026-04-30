@@ -1,0 +1,96 @@
+SCR_GameModeEditor : "{D2DE7F43D48A3667}Prefabs/MP/Modes/Editor/GameMode_Editor.et" {
+ ID "56B2B479C6B96951"
+ components {
+  RHS_AdditionalGameModeSettingsComponent "{61AE627E9607513B}" {
+   Enabled 0
+  }
+  SCR_AdditionalGameModeSettingsComponent "{6170E11C3C452ACC}" {
+   m_bEnableTeamKillPunishment 0
+   m_eNametagRelationFilters 18
+   m_eNametagControllerFilters SHOW_PLAYERS
+   m_bAdditionalArtilleryOrderDistancePenalty 1
+  }
+  SCR_CampaignBuildingManagerComponent "{5D7CEE59B8954EBB}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{5DF6FBB5913F3245}" {
+   }
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+   m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
+  }
+  SCR_CampaignBuildingManagerComponent "{60EC2158F48C679A}" {
+   Enabled 0
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType DISABLED
+  }
+  SCR_PerceivedFactionManagerComponent "{61AA7E6E0C6A76F9}" {
+   m_eCharacterPerceivedFactionOutfitType DISABLED
+  }
+  SCR_PlayerSpawnPointManagerComponent "{56C2DDA69EF94C6D}" {
+   m_bDeployableSpawnPointsEnabled 0
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{5D44B78DAD98E7F9}" {
+    m_sForcedFaction "RTG"
+   }
+   m_bEnablePauseMenuRespawn 0
+  }
+  SCR_RespawnTimerComponent "{56C2DDA6EE0E4071}" {
+   m_fRespawnTime 60
+  }
+ }
+ {
+  ScriptedChatEntity {
+   ID "56E685E9EF952A67"
+   Channels {
+    BaseChatChannel "{559077E72C7027BC}" {
+     "Channel name" "Support"
+    }
+    FactionChatChannel "{559077E76537C0B4}" {
+     "Channel name" "RTG"
+    }
+    GroupChatChannel "{58729124A5B6D815}" {
+     "Channel name" "Section"
+    }
+   }
+   "Default channel" "Local"
+  }
+  SCR_LoadoutManager {
+   ID "56E685E92F1B7E2A"
+   m_aPlayerLoadouts {
+    SCR_PlayerArsenalLoadout "{693C6B1E02D77443}" {
+     m_sLoadoutName "Saved Loadout"
+     m_sLoadoutResource "{FD6DCAB788079619}Prefabs/Characters/Character_RTG_Base_Loadout.et"
+     m_sAffiliatedFaction "RTG"
+    }
+    SCR_FactionPlayerLoadout "{693C6B1DFCABCD59}" {
+     m_sLoadoutName "Anti-Tank"
+     m_sLoadoutResource "{00E48D2F9476A299}Prefabs/Characters/Role Loadouts/Character_RTG_AntiTank.et"
+     m_sAffiliatedFaction "RTG"
+    }
+    SCR_FactionPlayerLoadout "{693C6B1DFBCE664C}" {
+     m_sLoadoutName "Autorifleman"
+     m_sLoadoutResource "{78F1EDA47B24F348}Prefabs/Characters/Role Loadouts/Character_RTG_Autorifleman.et"
+     m_sAffiliatedFaction "RTG"
+    }
+    SCR_FactionPlayerLoadout "{693C6B1DF8BC9770}" {
+     m_sLoadoutName "Ammo Bearer"
+     m_sLoadoutResource "{F7651E7733323D4C}Prefabs/Characters/Role Loadouts/Character_RTG_AmmoBearer.et"
+     m_sAffiliatedFaction "RTG"
+    }
+    SCR_FactionPlayerLoadout "{693C6B1DFAD87586}" {
+     m_sLoadoutName "Medic"
+     m_sLoadoutResource "{9BF0C6E6FCCACDDA}Prefabs/Characters/Role Loadouts/Character_RTG_Medic.et"
+     m_sAffiliatedFaction "RTG"
+    }
+    SCR_FactionPlayerLoadout "{693C6B1DFDFF79A1}" {
+     m_sLoadoutName "Leader"
+     m_sLoadoutResource "{2282FDD9DDACD45E}Prefabs/Characters/Role Loadouts/Character_RTG_TeamLeader.et"
+     m_sAffiliatedFaction "RTG"
+    }
+   }
+  }
+ }
+}

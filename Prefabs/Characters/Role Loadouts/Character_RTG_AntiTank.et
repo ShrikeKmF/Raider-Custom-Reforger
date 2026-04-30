@@ -1,6 +1,15 @@
 SCR_ChimeraCharacter : "{FD6DCAB788079619}Prefabs/Characters/Character_RTG_Base_Loadout.et" {
  ID "520EC961A090B1EE"
  components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Anti-Tank"
+    m_Image "{51E8849416E1D906}UI/Textures/EditorPreviews/Characters/Factions/INDFOR/ION/Character_RHS_ION_Scout.edds"
+    m_aAuthoredLabels + {
+     ROLE_ANTITANK
+    }
+   }
+  }
   CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
    WeaponTemplate "{4D02E8D5E58AB005}Prefabs/Weapons/M4_MAAWS/M4_MAAWS.et"
   }

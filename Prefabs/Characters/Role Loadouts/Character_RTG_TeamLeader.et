@@ -1,3 +1,14 @@
 SCR_ChimeraCharacter : "{FD6DCAB788079619}Prefabs/Characters/Character_RTG_Base_Loadout.et" {
  ID "520EC961A090B1EE"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Team Leader"
+    m_Image "{7F79164432D7B5C4}UI/Textures/EditorPreviews/Characters/Factions/INDFOR/ION/Character_RHS_ION_SL.edds"
+    m_aAuthoredLabels + {
+     ROLE_LEADER TRAIT_ARMOR TRAIT_RADIO
+    }
+   }
+  }
+ }
 }
