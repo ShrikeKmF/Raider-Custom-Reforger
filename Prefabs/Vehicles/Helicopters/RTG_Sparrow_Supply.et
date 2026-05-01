@@ -3,7 +3,7 @@ Vehicle : "{F5763805919D0553}Prefabs/Vehicles/Helicopters/AH6M/AH6M_base.et" {
  components {
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
-    Name "[RTG] Sparrow Cargo (2/2)"
+    Name "[RTG] Sparrow Cargo (2/0)"
     m_Image "{B9BAF76D005BAB9A}UI/Textures/EditorPreviews/Vehicles/Helicopters/AH6M/MH6M_Supply.edds"
     m_sFaction "RTG"
     m_aAuthoredLabels + {
@@ -157,6 +157,9 @@ Vehicle : "{F5763805919D0553}Prefabs/Vehicles/Helicopters/AH6M/AH6M_base.et" {
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
+    RegisteringComponentSlotInfo USArmyDecal {
+     Prefab ""
+    }
     RegisteringComponentSlotInfo Supply_Ext {
      MergePhysics 1
      Prefab "{07D502D3EB0FC94D}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Extra/MH6M_Supply_Exterior.et"

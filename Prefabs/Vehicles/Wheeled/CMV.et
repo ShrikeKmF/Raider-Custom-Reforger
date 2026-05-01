@@ -1,6 +1,12 @@
 Vehicle : "{E1C3AC2D66E31E4B}Prefabs/Vehicles/Wheeled/M1152/M1152.et" {
  ID "BBCBA43A9778AE21"
  components {
+  SCR_CampaignBuildingProviderComponent "{693C95780C7A5F61}" {
+   m_bUseAllAvailableProviders 1
+   m_aAvailableTraits {
+    SERVICE_HQ
+   }
+  }
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "CMV (1/1)"
@@ -19,7 +25,7 @@ Vehicle : "{E1C3AC2D66E31E4B}Prefabs/Vehicles/Wheeled/M1152/M1152.et" {
     SCR_FuelNode "{6938D5A588E7A321}" {
      MaxFuel 250
      FuelCapPosition EntitySlotInfo "{566ADD141C309F7D}" {
-      Offset 0.0637 0.9501 -2.5544
+      Offset -0.8312 0.9501 -2.6667
       Angles 0 0 0
      }
      m_fInitialFuelTankState 100
@@ -27,10 +33,16 @@ Vehicle : "{E1C3AC2D66E31E4B}Prefabs/Vehicles/Wheeled/M1152/M1152.et" {
     }
    }
   }
+  SCR_FuelSupportStationComponent "{693C9578C73E319C}" {
+   m_bIsVehicle 1
+   m_bAllowGetFactionFromParent 1
+   m_fRange 14
+   m_eFactionUsageCheck 15
+  }
   SCR_RepairSupportStationComponent "{6938D5A5C67C4D20}" {
    m_bIsVehicle 1
-   m_fRange 15
-   m_eFactionUsageCheck 3
+   m_fRange 14
+   m_eFactionUsageCheck 31
   }
   SCR_SupportStationManagerComponent "{6938D5A5C29A9D38}" {
   }

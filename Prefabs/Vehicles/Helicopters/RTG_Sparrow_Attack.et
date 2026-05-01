@@ -15,7 +15,7 @@ Vehicle : "{6CA46BC65DE861A8}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Armed_base.e
   }
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
-    Name "[RTG] Sparrow Attack (2/2)"
+    Name "[RTG] Sparrow Attack (2/0)"
     m_Image "{AD6B012DB2488C52}UI/Textures/EditorPreviews/Vehicles/Helicopters/AH6M/AH6M_AIM92x1.edds"
     m_sFaction "RTG"
     m_aAutoLabels {
@@ -66,6 +66,9 @@ Vehicle : "{6CA46BC65DE861A8}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Armed_base.e
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
+    RegisteringComponentSlotInfo USArmyDecal {
+     Prefab ""
+    }
     RegisteringComponentSlotInfo Hydra_Cable_L {
      Enabled 0
     }

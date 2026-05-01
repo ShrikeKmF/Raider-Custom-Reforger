@@ -22,6 +22,9 @@ Vehicle : "{F5763805919D0553}Prefabs/Vehicles/Helicopters/AH6M/AH6M_base.et" {
   }
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
+    RegisteringComponentSlotInfo USArmyDecal {
+     Prefab ""
+    }
     RegisteringComponentSlotInfo Seats_Cargo {
      MergePhysics 1
      Prefab "{CA6F30B162EAE5CE}Prefabs/Vehicles/Helicopters/AH6M/VehParts/Extra/MH6M_seats.et"
